@@ -1,3 +1,5 @@
+'use strict';
+
 module.exports = [{
 	entry: './app.scss',
 	output: {
@@ -27,7 +29,6 @@ module.exports = [{
 						options: {
 							// Prefer Dart Sass
 							implementation: require('sass'),
-							includePaths: glob.sync('packages/*/node_modules').map((d) => path.join(__dirname, d)),
 						},
           },
         ]
